@@ -1,7 +1,10 @@
 import React from 'react'
+import { ProductForm } from './components/ProductForm'
 
 export const App = () => {
   return (
-    <div>App</div>
+    <div className='App'>
+      <ProductForm />
+    </div>
   )
 }
