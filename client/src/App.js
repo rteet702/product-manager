@@ -1,10 +1,10 @@
 import React from 'react'
-import { ProductForm } from './components/ProductForm'
+import { Landing } from './components/Landing'
 
 export const App = () => {
   return (
     <div className='App'>
-      <ProductForm />
+      <Landing />
     </div>
   )
 }
