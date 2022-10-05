@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 export const AllProducts = props => {
     const [allProducts, setAllProducts] = useState([])
@@ -17,7 +18,7 @@ export const AllProducts = props => {
         {
             allProducts.data ?
             allProducts.data.map( (item, index ) =>
-            <p key={index}><a href={`/api/products/${item._id}`}>{ item.title }</a></p>) :
+            <p key={index}><Link to={`/products/${ item._id }`}>{ item.title }</Link></p>) :
             <p>Loading...</p>
         }
     </div>

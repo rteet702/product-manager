@@ -21,19 +21,19 @@
     justify-content: center;
 }
 
-.App form > p {
+.App form>p {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.App form > p input {
+.App form>p input {
     flex: 1;
 
     margin: 1rem;
 }
 
-.App form > p textarea {
+.App form>p textarea {
     flex: 1;
 }
 
@@ -52,4 +52,13 @@
     background-color: cyan;
 
     cursor: pointer;
+}
+
+.ProductInfo {
+    text-align: center;
+    padding: 1rem;
+}
+
+.ProductInfo * {
+    margin: 1rem;
 }
