@@ -3,16 +3,17 @@ import { ProductForm } from '../components/ProductForm'
 import { AllProducts } from '../components/AllProducts'
 
 export const Landing = () => {
-    const [isSubmitted, setIsSubmitted] = useState(false)
+  const [isSubmitted, setIsSubmitted] = useState(false)
 
-    const refresh = () => {
-      setIsSubmitted(!isSubmitted)
-    }
+  const refresh = () => {
+    setIsSubmitted(!isSubmitted)
+  }
 
   return (
     <div>
-        <ProductForm refresh={ refresh }/>
-        <AllProducts refresh={ isSubmitted }/>
+      <h1>Create a Product</h1>
+      <ProductForm refresh={refresh} />
+      <AllProducts refresh={isSubmitted} redirect={refresh} />
     </div>
   )
 }

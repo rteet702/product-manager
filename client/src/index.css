@@ -62,3 +62,41 @@
 .ProductInfo * {
     margin: 1rem;
 }
+
+.ProductGroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: gray;
+
+    margin: 1rem 0;
+}
+
+.ProductGroup>*,
+.ProductGroup>* * {
+    text-decoration: none;
+
+    color: white;
+
+    padding: 1rem 1rem;
+
+    transition: background-color 0.2s;
+}
+
+.EditButton {
+    background-color: lightseagreen;
+}
+
+.EditButton:hover {
+    background-color: seagreen;
+}
+
+.DeleteButton {
+    background-color: brown;
+}
+
+.DeleteButton:hover {
+    cursor: pointer;
+    background-color: red;
+}

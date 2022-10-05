@@ -19,7 +19,6 @@ export const EditProduct = () => {
                 setPrice(response.data.price)
                 setDescription(response.data.description)
             })
-        console.log('useEffect ran.')
     }, [])
 
     const formHandler = (e) => {
@@ -51,7 +50,7 @@ export const EditProduct = () => {
                 <textarea id="description" rows="10" value={description} onChange={(e) => setDescription(e.target.value)}></textarea>
             </p>
             <p>
-                <input type="submit" id="submitForm" value="Add Product" />
+                <input type="submit" id="submitForm" value="Edit Product" />
             </p>
         </form>
     )
