@@ -1,5 +1,6 @@
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
+import { DeleteButton } from './DeleteButton'
 import React, { useEffect, useState } from 'react'
 
 export const ProductInfo = () => {
@@ -16,6 +17,7 @@ export const ProductInfo = () => {
             <h1>{product.title}</h1>
             <p>${product.price}</p>
             <p>{product.description}</p>
+            <DeleteButton id={id} can_redirect={true} />
         </div>
     )
 }
